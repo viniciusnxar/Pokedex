@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 }
 body{
     text-align: center;
-    background: linear-gradient(to bottom, #6ab7f5 #fff);
+    background: linear-gradient(#e66465, #9198e5);
     min-height: 100vh;
 }
 main{
@@ -22,14 +22,14 @@ main{
     width: 100%;
     max-width: 425px;
 }
-.pokemon_image{
+.pokemon__image{
     position: absolute;
     left: 55%;
     bottom: 50%;
     transform: translate(-63%, 20%);
     height: 18%;
 }
-.pokemon_data {
+.pokemon__data {
     position: absolute;
     font-weight: 600;
     color: #aaa;
@@ -38,7 +38,7 @@ main{
     font-size: clamp(8px, 5vw, 25px);
 
 }
-.pokemon_name{
+.pokemon__name{
     color: #3a444d;
     text-transform: capitalize;
 }
@@ -47,4 +47,41 @@ main{
     width: 65%;
     top: 65%;
     left: 13.5%;
+}
+.input__search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+
+}
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+.button{
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+
+}
+.button:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
 }
