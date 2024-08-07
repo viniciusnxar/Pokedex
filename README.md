@@ -1,2 +1,2 @@
 # Pokedex
-Just a simple pokedex
+Trabalho faculdade para desmonstrar buscas utilizando APIs
